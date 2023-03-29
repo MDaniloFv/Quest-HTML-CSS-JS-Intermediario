@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Quest HTML - CSS - JS Intermediário</title>
+</head>
+
+<body>
+    <main>
+        <div class="ajuda">
+            <h1 class="titulo">Ficou com dúvida?<br> Nos mande uma mensagem!</h1>
+            <p class="texto">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e estaremos em contato em nenos de
+                24h</p>
+        </div>
+        <div class="formulario">
+            <form class="info" id="formulario" action="">
+                <input type="text" name="" id="nome" placeholder="Nome Completo *" class="requerido"
+                    oninput="validaNome()">
+                <span>Campo Obrigatório</span>
+                <input type="text" name="" id="email" placeholder="E-mail *" class="requerido" oninput="validaEmail()">
+                <span>Campo Obrigatório</span>
+                <input type="text" name="" id="telefone" placeholder="Telefone *" class="requerido"
+                    oninput="validaTelefone()">
+                <span>Campo Obrigatório</span>
+                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Mensagem *" class="requerido"
+                    oninput="validaMensagem()"></textarea>
+                <span>Campo Obrigatório</span>
+                <div class="aviso">
+                    <p>*Campos Obrigatórios</p>
+                </div>
+                <input class="btn" type="text" id="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
